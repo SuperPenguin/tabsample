@@ -62,6 +62,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       appBar: AppBar(
         title: const Text('Tab Demo'),
         bottom: TabBar(
+          // key: ValueKey('TabBar-$_index'),
           isScrollable: true,
           controller: _controllers[_index],
           tabs: _tabGroups[_index],
